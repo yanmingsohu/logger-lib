@@ -1,6 +1,6 @@
 # 日志
 
-> 这个项目不再包含 kfk-lib, 需要自行引入并通过
+> 这个项目不再包含 kfk-lib, 需要自行引入并通过  
 > logger.set_kfk_lib(require('kfk-lib')) 来引入库
 
 
@@ -41,7 +41,7 @@ logger.set_kfk_lib(require('kfk-lib'))
 logger.open_kfk()
 ```
 
-> 必须设置 kfk 库才能启用 open_kfk()
+> 必须设置 kfk 库才能启用 open_kfk()  
 > 需要配置文件中有 kfk 的设置
 
 
