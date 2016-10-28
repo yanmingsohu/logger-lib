@@ -1,5 +1,4 @@
 var config = {
-	env      : 'development',
   
   logger : {
     // ALL, TRACE, DEBUG, INFO, WARN, ERROR, FATAL, MARK, OFF

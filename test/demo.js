@@ -40,13 +40,14 @@ function worker() {
 	var log3 = log2('other-file');
 	test(log3);
 
-	process.exit(0);
+	setTimeout(function() {
+		process.exit(0);
+	}, 1000);
 }
 
 
 function test(logger) {
 	//logger.showConsole();
-
 	logger.error('log error IS WORK !!!!!!!!:', new Error('IS WORK !!!!!!!!'));
 	logger.info('log info IS WORK !!!!!!!!');
 	logger.warn('log warn IS WORK !!!!!!!!');

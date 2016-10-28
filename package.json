@@ -1,6 +1,6 @@
 {
     "name": "logger-lib",
-    "version": "0.2.1",
+    "version": "0.3.3",
     "description": "日志组件",
     "main": "index.js",
     "scripts": {
@@ -9,7 +9,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "configuration-lib": "^0.1.2",
+        "configuration-lib": "^0.2",
         "log4js": "^0.6.22"
     },
     "repository": {

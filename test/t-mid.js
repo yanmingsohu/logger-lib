@@ -1,12 +1,30 @@
-var lib = require('../index.js');
-var express = require('express');
+var logger = require('../index.js');
+
+var mid = logger.mid.log('http://getbootstrap.com/dist/css/bootstrap.min.css');
+var port = 88;
 
 
-var post = 80;
-var app = express();
+forMixer();
+console.log('Log server on', port);
 
-app.use('/log', lib.mid.log('zr-i.com'));
 
-app.listen(post);
 
-console.log('Log server on', post);
+function forNative() {
+  var http = require('http');
+  var server = http.createServer(mid);
+  server.listen(port);
+}
+
+
+function forMixer() {
+  var mixer = require('mixer-lib');
+  mixer.create_http_mix_server({ 
+      whenLoad : whenLoad, 
+      port     : port
+  });
+
+  function whenLoad(app_pool) {
+    var p = app_pool.addApp(mid);
+    p.add('/');
+  }
+}

@@ -4,6 +4,7 @@ db_buffer/**
 build/**
 file_pool/**
 logs/**
+logs
 
 *.class
 *.zip
