@@ -23,6 +23,7 @@ logger.warn('log warn.');
 logger.debug('debug');
 logger.fatal('fatal');
 logger.trace(new Error('trace'));
+logger.logname;
 ```
 
 ### 创建一个命名日志, 写入到单独的文件中:
