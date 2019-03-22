@@ -8,10 +8,12 @@ logger.set_kfk_lib(require('kfk-lib')) 来加载库
 
 `npm install logger-lib --save`
 
+该项目没有加入 npm 如需要请自行搞定...
+
 
 # Usage
 
-`var logger  = require('../index.js')`
+`var logger  = require('logger-lib')`
 
 
 ### 生成日志, 默认消息输出到 ALL 中
