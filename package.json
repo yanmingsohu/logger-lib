@@ -1,6 +1,6 @@
 {
     "name": "logger-lib",
-    "version": "0.3.5",
+    "version": "0.3.6",
     "description": "日志组件",
     "main": "index.js",
     "scripts": {
@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "private"
+        "url": "https://github.com/yanmingsohu/logger-lib"
     },
     "devDependencies": {
         "express": "^4.12.4",
